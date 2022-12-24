@@ -169,7 +169,7 @@ describe('Payment Order - CreateFormReject', () => {
 
         const activity = await tenantDatabase.UserActivity.findOne({
           where: {
-            number: paymentOrderForm.editedNumber,
+            number: paymentOrderForm.number,
             activity: 'Rejected',
           }
         })

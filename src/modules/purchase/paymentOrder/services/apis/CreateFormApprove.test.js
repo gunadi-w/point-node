@@ -131,7 +131,7 @@ describe('Payment Order - CreateFormApprove', () => {
 
         const activity = await tenantDatabase.UserActivity.findOne({
           where: {
-            number: paymentOrderForm.editedNumber,
+            number: paymentOrderForm.number,
             activity: 'Approved',
           }
         })
