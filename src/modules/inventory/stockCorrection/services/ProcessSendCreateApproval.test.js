@@ -74,8 +74,8 @@ const generateRecordFactories = async ({
   const chartOfAccount = await tenantDatabase.ChartOfAccount.create({
     typeId: chartOfAccountType.id,
     position: 'DEBIT',
-    name: 'beban selisih persediaan',
-    alias: 'beban selisih persediaan',
+    name: 'COST OF SALES',
+    alias: 'BEBAN SELISIH PERSEDIAAN',
   });
 
   maker = await factory.user.create(maker);
